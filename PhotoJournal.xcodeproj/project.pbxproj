@@ -14,6 +14,7 @@
 		D8F49A49234547F300DAE1A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F49A48234547F300DAE1A2 /* Assets.xcassets */; };
 		D8F49A4C234547F300DAE1A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F49A4A234547F300DAE1A2 /* LaunchScreen.storyboard */; };
 		D8F49A57234547F300DAE1A2 /* PhotoJournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F49A56234547F300DAE1A2 /* PhotoJournalTests.swift */; };
+		D8F49A62234548B900DAE1A2 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F49A61234548B900DAE1A2 /* Secrets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		D8F49A52234547F300DAE1A2 /* PhotoJournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoJournalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F49A56234547F300DAE1A2 /* PhotoJournalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoJournalTests.swift; sourceTree = "<group>"; };
 		D8F49A58234547F300DAE1A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8F49A61234548B900DAE1A2 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		D8F49A33234547F100DAE1A2 = {
 			isa = PBXGroup;
 			children = (
+				D8F49A61234548B900DAE1A2 /* Secrets.swift */,
 				D8F49A3E234547F100DAE1A2 /* PhotoJournal */,
 				D8F49A55234547F300DAE1A2 /* PhotoJournalTests */,
 				D8F49A3D234547F100DAE1A2 /* Products */,
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F49A44234547F100DAE1A2 /* ViewController.swift in Sources */,
+				D8F49A62234548B900DAE1A2 /* Secrets.swift in Sources */,
 				D8F49A40234547F100DAE1A2 /* AppDelegate.swift in Sources */,
 				D8F49A42234547F100DAE1A2 /* SceneDelegate.swift in Sources */,
 			);
