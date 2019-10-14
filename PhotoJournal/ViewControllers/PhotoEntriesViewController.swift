@@ -10,31 +10,33 @@ import UIKit
 
 class PhotoEntriesViewController: UIViewController {
   
+  //MARK: -- Internal Properties
   private var photos = [PhotoEntry]() {
     didSet {
       photoJournalCollection.reloadData()
     }
   }
   
-  //Mark: -- Outlets
+  //MARK: -- Outlets
   @IBOutlet weak var photoJournalCollection: UICollectionView!
   
-
   override func viewDidLoad() {
     super.viewDidLoad()
     photoJournalCollection.dataSource = self
     layout()
   }
   
-  
+  //MARK: -- Functions
   @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
     let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
     guard let addPhotoVC = storyboard.instantiateViewController(identifier: "PhotoEntryVC") as? AddPhotoEntryViewController else {return}
     addPhotoVC.modalPresentationStyle = .currentContext
     present(addPhotoVC, animated: true, completion: nil)
   }
+   
 }
 
+//MARK: -- Extentions
 extension PhotoEntriesViewController: UICollectionViewDataSource {
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return photos.count
@@ -54,7 +56,6 @@ extension PhotoEntriesViewController: UICollectionViewDataSource {
   }
 }
 
-
 extension PhotoEntriesViewController: UICollectionViewDelegateFlowLayout {
   func layout() {
     guard let layout = self.photoJournalCollection.collectionViewLayout as? UICollectionViewFlowLayout else {
@@ -68,7 +69,7 @@ extension PhotoEntriesViewController: UICollectionViewDelegateFlowLayout {
 extension PhotoEntriesViewController: PhotoEntryVCDelegate {
   func showActionView(tag: Int) {
     let optionsMenu = UIAlertController.init(title: "Options", message: "Pick an option", preferredStyle: .actionSheet)
-    let deleteAction = UIAlertAction.init(title: "Delet", style: .destructive) { (action) in
+    let deleteAction = UIAlertAction.init(title: "Delete", style: .destructive) { (action) in
       _ = self.photos[tag]
     }
     optionsMenu.addAction(deleteAction)

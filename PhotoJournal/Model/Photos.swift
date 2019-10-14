@@ -9,7 +9,6 @@
 import Foundation
 
 struct PhotoEntry: Codable {
-//  let id: Int
   let photo: Data
   let description: String
   let createdAt: String

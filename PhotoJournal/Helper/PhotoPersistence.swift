@@ -15,11 +15,25 @@ class PhotoPersistenceHelper {
     try persistenceHelper.save(newElement: newPhoto)
   }
   
-  func getPhotos() throws -> [PhotoEntry] {
+  func fetchPhotos() throws -> [PhotoEntry] {
     return try persistenceHelper.getObjects()
+  }
+  
+  func delete(tag: Int) throws {
+    var photos = try fetchPhotos()
+    _ = photos.remove(at: tag)
+    try persistenceHelper.replace(elements: photos)
+    print("Photo successfully deleted")
+  }
+  
+  func saveEdits(to edittedPhoto: PhotoEntry, tag: Int) throws {
+    var photos = try fetchPhotos()
+    photos[tag] = edittedPhoto
+    try persistenceHelper.replace(elements: photos)
   }
   
   private let persistenceHelper = PersistenceHelper<PhotoEntry>.init(fileName: "MyPhotos.plist")
   
   private init() {}
 }
+

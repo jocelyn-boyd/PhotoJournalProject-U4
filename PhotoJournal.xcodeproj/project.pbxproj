@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8CC596F2354062100779B3F /* UserSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8CC596E2354062100779B3F /* UserSettingsTableViewCell.swift */; };
 		D8F49A40234547F100DAE1A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F49A3F234547F100DAE1A2 /* AppDelegate.swift */; };
 		D8F49A42234547F100DAE1A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F49A41234547F100DAE1A2 /* SceneDelegate.swift */; };
 		D8F49A44234547F100DAE1A2 /* PhotoEntriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F49A43234547F100DAE1A2 /* PhotoEntriesViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8CC596E2354062100779B3F /* UserSettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingsTableViewCell.swift; sourceTree = "<group>"; };
 		D8F49A3C234547F100DAE1A2 /* PhotoJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F49A3F234547F100DAE1A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8F49A41234547F100DAE1A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 		D8F49A6923454E6700DAE1A2 /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				D8CC596E2354062100779B3F /* UserSettingsTableViewCell.swift */,
 				D8F49A6723454E4E00DAE1A2 /* PhotoCollectionViewCell.swift */,
 			);
 			path = CustomCell;
@@ -277,6 +280,7 @@
 				D8F49AAD2347C25E00DAE1A2 /* PersistenceHelper.swift in Sources */,
 				D8F49A6F23457FE000DAE1A2 /* UserDefaults.swift in Sources */,
 				D8F49A40234547F100DAE1A2 /* AppDelegate.swift in Sources */,
+				D8CC596F2354062100779B3F /* UserSettingsTableViewCell.swift in Sources */,
 				D8F49A42234547F100DAE1A2 /* SceneDelegate.swift in Sources */,
 				D8F49A722345848400DAE1A2 /* UserSettingsTableViewController.swift in Sources */,
 			);

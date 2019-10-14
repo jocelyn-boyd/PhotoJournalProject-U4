@@ -36,7 +36,6 @@ class UserDefaultsWrapper {
   func switchScrollDirection() -> Bool? {
     return UserDefaults.standard.value(forKey: scrollDirectionKey) as? Bool
   }
-  
 }
 
 

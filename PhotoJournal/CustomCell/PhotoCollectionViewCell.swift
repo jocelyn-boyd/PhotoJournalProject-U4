@@ -22,5 +22,4 @@ class PhotoCollectionViewCell: UICollectionViewCell {
   delegate?.showActionView(tag: sender.tag)
   }
   
-  
 }
